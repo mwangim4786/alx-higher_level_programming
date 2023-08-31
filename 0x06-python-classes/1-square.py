@@ -3,10 +3,10 @@
 
 
 class Square:
-    """ Created empty class Square 
+    """ Representation of a Square 
     
     Attribures:
-    __size
+    __size (int): size of a side of the square
     """
     def __init__(self, size):
         """Initializes a square

@@ -21,7 +21,7 @@ class Square:
             The size of the square
         """
 
-        return self.__sizeof__
+        return self.__size
     
     @size.setter
     def size(self, value):
@@ -31,7 +31,7 @@ class Square:
         Returns:
             None
         """
-        
+
         if type(value) is int:
             if value < 0:
                 raise ValueError('size must be >= 0')

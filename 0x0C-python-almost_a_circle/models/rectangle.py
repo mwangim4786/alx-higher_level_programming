@@ -93,7 +93,14 @@ class Rectangle(Base):
 
     def display(self):
         """Print the Rectangle using the `#` character to stdout."""
-        
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
 
+        
+        for h in range(self.height):
+            for w in range(self.width):
+                print("#", end="")
+            print("")  
 
 

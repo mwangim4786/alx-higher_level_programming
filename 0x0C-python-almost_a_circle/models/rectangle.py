@@ -104,3 +104,7 @@ class Rectangle(Base):
             print("")  
 
 
+    def __str__(self):
+        return "[Rectangle]" str(self.id) str(self.x)+"/"+str(self.y) str(self.width)+"/"+str(self.height)
+
+

@@ -18,9 +18,9 @@ if __name__ == '__main__':
                  ON `c`.`state_id` = `s`.`id` \
                  ORDER BY `c`.`id`")
 
-    # Fetch all the rows of data from table
+    """Fetch all the rows of data from table"""
     query_rows = cur.fetchall()
 
-    # Printing the data
+    """Printing the data"""
     for city in query_rows:
         print(city)

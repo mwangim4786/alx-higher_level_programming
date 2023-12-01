@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script that fetches https://alx-intranet.hbtn.io/status."""
+"""Displays the X-Request-Id header variable of a request to a given URL."""
 
 import sys
 import urllib.request

@@ -1,10 +1,14 @@
 #!/usr/bin/node
+
 const request = require('request');
-// Import the request module.
+// Import the 'request' module.
 
-request.get(process.argv[2]).on('response', function (response) {
-// Use request module to perform HTTP request to the url.
+request.get(process.argv[2])
+// Use 'request' module to perform HTTP GET request to the URL.
 
-  console.log('code: ${response.statusCode}');
-  // print the HTTP status code to the console.
-});
+  .on('response', function (response) {
+    // Set up an event listener for the 'response' event emitted by the HTTP request.
+
+    console.log(`code: ${response.statusCode}`);
+    // Print the HTTP status code of the response to the console.
+  });
